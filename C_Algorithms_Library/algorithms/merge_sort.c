@@ -1,7 +1,9 @@
 #include "sort_algorithms.h"
 
+#include <stdio.h>
+#include <stdlib.h>
 
-void intercalar(int vetor[], int ini, int meio, int fim)
+void intercalar(int* vetor, int ini, int meio, int fim)
 {
     int i = ini;
     int j = meio + 1;
@@ -41,7 +43,7 @@ void intercalar(int vetor[], int ini, int meio, int fim)
     free(aux);
 }
 
-void merge_sort(int vetor[], int ini, int fim)
+void merge_sort(int* vetor, int ini, int fim)
 {
     int meio;
 

@@ -1,0 +1,8 @@
+*.cbp
+.venv
+bin
+obj
+*.layout
+*.depend
+*.dll
+__pycache__

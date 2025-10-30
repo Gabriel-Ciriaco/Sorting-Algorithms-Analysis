@@ -1,7 +1,7 @@
 #include "sort_algorithms.h"
 
 
-void bubble_sort(int vetor[], int ini, int fim)
+void bubble_sort(int* vetor, int ini, int fim)
 {
     if (!vetor || ini < 0 || fim < ini) return;
 
