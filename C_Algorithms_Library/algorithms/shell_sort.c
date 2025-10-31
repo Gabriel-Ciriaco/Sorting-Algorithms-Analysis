@@ -1,6 +1,10 @@
 void shell_sort(int *vetor, int n, int *vetorGaps, int numGaps)
 {
-    int pos, i, j, span, chave;
+    int pos;
+    int i;
+    int j;
+    int span;
+    int chave;
 
     for(pos = 0; pos < numGaps; pos++)
     {
