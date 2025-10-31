@@ -1,3 +1,5 @@
+#include "sort_algorithms.h"
+
 /*
     A explicação do algoritmo é a seguinte:
         - Nós começamos do segundo elemento do vetor,
@@ -10,9 +12,9 @@
         - Isso é repetido até que o array inteiro esteja ordenado.
 */
 
-void insertion_sort(int *vetor, int n)
+void insertion_sort(int *vetor, int ini, int fim)
 {
-    for(int i = 1; i < n; i++)
+    for(int i = ini + 1; i <= fim; i++)
     {
         int key = vetor[i];
 

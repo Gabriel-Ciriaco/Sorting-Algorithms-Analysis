@@ -1,6 +1,7 @@
 #include "sort_algorithms.h"
 
-int particionar(int *vetor, int ini, int fim)
+
+int central_particionar(int *vetor, int ini, int fim)
 {
     int meio = (ini + fim) / 2;
 
@@ -39,7 +40,7 @@ void central_quick_sort(int *vetor, int ini, int fim)
 {
     if (ini < fim)
     {
-        int pos = particionar(vetor, ini, fim);
+        int pos = central_particionar(vetor, ini, fim);
 
         central_quick_sort(vetor, ini, pos - 1);
         central_quick_sort(vetor, pos + 1, fim);

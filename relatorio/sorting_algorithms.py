@@ -19,9 +19,13 @@ class Sorting_Algorithms:
         self.funcs = {
             "run_sort_function": ([self.SORT_FUNC, POINTER(c_int), c_int, c_int], c_double),
             "quick_sort": ([POINTER(c_int), c_int, c_int], None),
+            "central_quick_sort": ([POINTER(c_int), c_int, c_int], None),
             "merge_sort": ([POINTER(c_int), c_int, c_int], None),
             "bubble_sort": ([POINTER(c_int), c_int, c_int], None),
             "better_bubble_sort": ([POINTER(c_int), c_int, c_int], None),
+            "insertion_sort": ([POINTER(c_int), c_int, c_int], None),
+            "selection_sort": ([POINTER(c_int), c_int, c_int], None),
+            "heap_sort": ([POINTER(c_int), c_int, c_int], None),
         }
 
         self.load_functions()
@@ -37,6 +41,14 @@ class Sorting_Algorithms:
         ...
 
     def quick_sort(
+        self,
+        array: np.ndarray[tuple[int], np.int32],  
+        ini: int = 0,
+        fim: Optional[int] = None
+    ) -> np.ndarray[tuple[int], np.int32]:  
+        ...
+
+    def central_quick_sort(
         self,
         array: np.ndarray[tuple[int], np.int32],  
         ini: int = 0,
@@ -67,6 +79,31 @@ class Sorting_Algorithms:
         fim: Optional[int] = None
     ) -> np.ndarray[tuple[int], np.int32]:  
         ...
+
+    def insertion_sort(
+        self,
+        array: np.ndarray[tuple[int], np.int32],  
+        ini: int = 0,
+        fim: Optional[int] = None
+    ) -> np.ndarray[tuple[int], np.int32]:  
+        ...
+
+    def selection_sort(
+        self,
+        array: np.ndarray[tuple[int], np.int32],  
+        ini: int = 0,
+        fim: Optional[int] = None
+    ) -> np.ndarray[tuple[int], np.int32]:  
+        ...
+
+    def heap_sort(
+        self,
+        array: np.ndarray[tuple[int], np.int32],  
+        ini: int = 0,
+        fim: Optional[int] = None
+    ) -> np.ndarray[tuple[int], np.int32]:  
+        ...
+
 
     def load_functions(self):
         for alg_name, (argtypes, restype) in self.funcs.items():

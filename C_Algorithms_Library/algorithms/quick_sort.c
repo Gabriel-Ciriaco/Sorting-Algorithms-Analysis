@@ -1,7 +1,5 @@
 #include "sort_algorithms.h"
 
-#define SIZE 5
-
 
 int particionar(int* vetor, int ini, int fim)
 {
