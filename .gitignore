@@ -5,4 +5,5 @@ obj
 *.layout
 *.depend
 *.dll
+*.so
 __pycache__
