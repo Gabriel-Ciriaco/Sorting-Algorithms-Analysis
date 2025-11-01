@@ -30,4 +30,6 @@ DLL_EXPORT void selection_sort(int* vetor, int ini, int fim);
 
 DLL_EXPORT void heap_sort(int* vetor, int ini, int fim);
 
+DLL_EXPORT void shell_sort(int* vetor, int ini, int fim);
+
 #endif // SORT_ALGORITHMS_H

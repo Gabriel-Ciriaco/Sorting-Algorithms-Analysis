@@ -26,6 +26,7 @@ class Sorting_Algorithms:
             "insertion_sort": ([POINTER(c_int), c_int, c_int], None),
             "selection_sort": ([POINTER(c_int), c_int, c_int], None),
             "heap_sort": ([POINTER(c_int), c_int, c_int], None),
+            "shell_sort": ([POINTER(c_int), c_int, c_int], None),
         }
 
         self.load_functions()
@@ -97,6 +98,14 @@ class Sorting_Algorithms:
         ...
 
     def heap_sort(
+        self,
+        array: np.ndarray[tuple[int], np.int32],  
+        ini: int = 0,
+        fim: Optional[int] = None
+    ) -> np.ndarray[tuple[int], np.int32]:  
+        ...
+    
+    def shell_sort(
         self,
         array: np.ndarray[tuple[int], np.int32],  
         ini: int = 0,
