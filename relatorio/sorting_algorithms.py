@@ -123,7 +123,7 @@ class Sorting_Algorithms:
             setattr(self, alg_name, self.__wrapper_functions__(c_function))
 
 
-    def __wrapper_functions__(self, function: ctypes._CDLLFuncPointer):
+    def __wrapper_functions__(self, function):
         @wraps(function) # Preserves the information about "function"
         def wrapper(array: np.ndarray = None,
                     ini: int = 0,
