@@ -26,7 +26,7 @@ Além disso, este projeto possui scripts de análise e geração de relatórios 
 
 ## Como Compilar
 
-Este projeto foi desenvolvido utilizando C, e você pode compilar as bibliotecas dinâmicas necessárias para rodar os algoritmos em diferentes sistemas operacionais. Elas também podem ser encontradas prontas para download em [Releases](releases).
+Este projeto foi desenvolvido utilizando C, e você pode compilar as bibliotecas dinâmicas necessárias para rodar os algoritmos em diferentes sistemas operacionais. Elas também podem ser encontradas prontas para download em [Releases](https://github.com/Gabriel-Ciriaco/Sorting-Algorithms-Analysis/releases).
 
 ### No Windows (Gerar `.dll`)
 
